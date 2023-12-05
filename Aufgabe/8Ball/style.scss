@@ -1,0 +1,71 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #454545;
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgoldenrodyellow;
+
+    /* CSS für die Animation */
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px) rotate(-5deg); }
+        50% { transform: translateX(5px) rotate(5deg); }
+        75% { transform: translateX(-5px) rotate(-5deg); }
+        100% { transform: translateX(0); }
+    }
+      
+    header {
+        padding-top: 0.25em;
+        text-align: center;
+        
+        span {
+          font-size: 60px;
+          color: #f16059;
+        }
+    }
+
+    .page {
+        width: 80%;
+        max-width: 960px;
+        margin: 0 auto;
+
+        .ball{
+            margin: 0 auto;
+        }
+        .button {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .answer {
+          position:absolute;
+          width:14%;
+          top:50%;
+          left:50%;
+          margin-top:-60px;
+          margin-left:-65px;
+          font: 20px 'Open Sans', Helvetica, Arial, sans-serif;
+          font-weight: 800;
+          color: #222;
+          text-transform: uppercase;
+          text-align: center;
+          opacity: 0;
+        }
+        
+        #questionButton {
+          font-size: 26px;
+          border-radius: 5px;
+          border: none;
+          color: #f8f8f8;
+          background-color: #f16059;
+          padding: 10px 75px;
+          display: inline-block;
+          margin: 0 auto;
+          cursor: pointer;
+
+          &:hover{
+            background-color: #b14a45;
+          }
+        }
+    }
+  }
