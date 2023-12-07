@@ -5,11 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function animate8Ball() {
         let ball = document.getElementById("8ball");
         setTimeout(() => {
-            void ball.offsetWidth; // Trigger reflow to restart the animation
             ball.style.animation = 'shake 0.5s ease-in-out 2';
             ball.src = "magic8ballAnswer.png";
         }, 0);
-        ball.style.animation = 'none';
     }
     
     magic8Ball.askQuestion = function (question) {
@@ -26,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         // Füge den Fade-In-Effekt nur beim Erscheinen hinzu
         if (answer.style.opacity === '0') {
-            answer.style.transition = 'opacity 1s ease-in-out';
+            answer.style.transition = 'opacity 2s ease-in-out';
             answer.style.opacity = 1;
         }
 
